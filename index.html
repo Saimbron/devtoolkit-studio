@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="ca" class="dark scroll-smooth">
+<html lang="es" class="dark scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevToolkit Studio | Utilitats Modernes per a Desenvolupadors Web i SEO</title>
-  <meta name="description" content="Suite gratuïta d'eines ràpides per a desenvolupadors web: formatejador i validador JSON, generador CSS de glassmorphism i ombres, generador de Meta Tags SEO, Base64 & URL encoder/decoder, Regex tester, generador UUID v4, contrasenyes segures i contrast WCAG.">
+  <title>DevToolkit Studio | Utilidades Modernas para Desarrolladores Web y SEO</title>
+  <meta name="description" content="Suite gratuita de herramientas rápidas para desarrolladores web: formateador y validador JSON, generador CSS de glassmorphism y sombras, generador de Meta Tags SEO, Base64 & URL encoder/decoder, Regex tester, generador UUID v4, contraseñas seguras y contraste WCAG.">
   <meta name="keywords" content="json formatter, css glassmorphism generator, open graph generator, meta tags seo, base64 encoder decoder, url encoder, regex tester, uuid v4 generator, contrast checker, password generator, web developer tools">
   <meta name="author" content="DevToolkit Studio">
   
   <!-- Open Graph / SEO -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="DevToolkit Studio — Eines Web per a Desenvolupadors">
-  <meta property="og:description" content="Eines web ràpides, modernes i gratuïtes per a desenvolupadors i dissenyadors web.">
+  <meta property="og:title" content="DevToolkit Studio — Herramientas Web para Desarrolladores">
+  <meta property="og:description" content="Herramientas web rápidas, modernas y gratuitas para desarrolladores y diseñadores web.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80">
   
   <!-- Schema.org SoftwareApplication Structured Data -->
@@ -22,21 +22,21 @@
     "name": "DevToolkit Studio",
     "operatingSystem": "All",
     "applicationCategory": "DeveloperApplication",
-    "description": "Suite gratuïta d'eines ràpides i segures per a desenvolupadors web: formatejador JSON, generador CSS de glassmorphism, SEO Meta Tags, Base64 & URL encoder/decoder, Regex Tester, generador UUID v4, contrasenyes segures i verificador de contrast WCAG 2.1.",
+    "description": "Suite gratuita de herramientas rápidas y seguras para desarrolladores web: formateador JSON, generador CSS de glassmorphism, SEO Meta Tags, Base64 & URL encoder/decoder, Regex Tester, generador UUID v4, contraseñas seguras y verificador de contraste WCAG 2.1.",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "EUR"
     },
     "featureList": [
-      "Validador i Formatejador JSON en temps real",
-      "Generador de Glassmorphism & Ombres Suaus CSS",
-      "Generador de Meta Tags i Targetes Open Graph",
-      "Codificador i Descodificador Base64 & URL amb suport UTF-8",
-      "Regex Tester interactiu amb presets i visualització de grups",
-      "Generador criptogràfic de UUID v4 per lots",
-      "Generador de Contrasenyes i Tokens Criptogràfics",
-      "Comprovador d'Accessibilitat i Contrast WCAG 2.1"
+      "Validador y Formateador JSON en tiempo real",
+      "Generador de Glassmorphism & Sombras Suaves CSS",
+      "Generador de Meta Tags y Tarjetas Open Graph",
+      "Codificador y Decodificador Base64 & URL con soporte UTF-8",
+      "Regex Tester interactivo con presets y visualización de grupos",
+      "Generador criptográfico de UUID v4 por lotes",
+      "Generador de Contraseñas y Tokens Criptográficos",
+      "Comprobador de Accesibilidad y Contraste WCAG 2.1"
     ],
     "author": {
       "@type": "Organization",
@@ -75,7 +75,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- GOOGLE ADSENSE CODE PLACEHOLDER -->
-  <!-- Substitueix 'ca-pub-XXXXXXXXXXXXXXXX' pel teu identificador d'editor d'AdSense -->
+  <!-- Sustituye 'ca-pub-XXXXXXXXXXXXXXXX' por tu identificador de editor de AdSense -->
   <!--
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
   -->
@@ -131,8 +131,8 @@
       <!-- Quick Command Palette Button -->
       <button onclick="openCmdPalette()" class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 border border-slate-700/60 text-xs text-slate-300 transition-all hover:border-violet-500/50 shadow-inner group">
         <i data-lucide="search" class="w-3.5 h-3.5 text-violet-400 group-hover:scale-110 transition-transform"></i>
-        <span class="hidden md:inline font-medium text-slate-300">Cercar eines...</span>
-        <span class="md:hidden font-medium text-slate-300">Cercar</span>
+        <span class="hidden md:inline font-medium text-slate-300">Buscar herramientas...</span>
+        <span class="md:hidden font-medium text-slate-300">Buscar</span>
         <kbd class="px-1.5 py-0.5 text-[10px] font-mono bg-slate-900 border border-slate-700 text-slate-400 rounded group-hover:text-violet-300">Ctrl+K</kbd>
       </button>
 
@@ -157,7 +157,7 @@
           <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span> UUID v4
         </button>
         <button onclick="switchTool('pass')" id="nav-btn-pass" class="tool-nav-btn px-3 py-1.5 text-xs font-medium rounded-lg transition-all text-slate-400 hover:text-slate-200 shrink-0">
-          Passwords
+          Contraseñas
         </button>
         <button onclick="switchTool('color')" id="nav-btn-color" class="tool-nav-btn px-3 py-1.5 text-xs font-medium rounded-lg transition-all text-slate-400 hover:text-slate-200 shrink-0">
           WCAG
@@ -177,7 +177,7 @@
     <div class="w-full max-w-xl bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-150" onclick="event.stopPropagation()">
       <div class="p-4 border-b border-slate-800 flex items-center gap-3">
         <i data-lucide="search" class="w-5 h-5 text-violet-400 shrink-0"></i>
-        <input type="text" id="cmdPaletteInput" placeholder="Cerca eines (ex: regex, base64, json, uuid, css, contrast)..."
+        <input type="text" id="cmdPaletteInput" placeholder="Buscar herramientas (ej: regex, base64, json, uuid, css, contraste)..."
           class="w-full bg-transparent border-none text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-0 font-sans"
           autocomplete="off" oninput="filterCmdPalette(this.value)">
         <button onclick="closeCmdPalette()" class="px-2 py-0.5 text-[10px] font-mono bg-slate-800 border border-slate-700 text-slate-400 hover:text-white rounded">ESC</button>
@@ -190,8 +190,8 @@
       <div class="p-3 bg-slate-950/60 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
         <div class="flex items-center gap-3">
           <span><kbd class="font-mono bg-slate-800 px-1 py-0.5 rounded text-slate-300">↑↓</kbd> Navegar</span>
-          <span><kbd class="font-mono bg-slate-800 px-1 py-0.5 rounded text-slate-300">↵</kbd> Obrir</span>
-          <span><kbd class="font-mono bg-slate-800 px-1 py-0.5 rounded text-slate-300">Esc</kbd> Tancar</span>
+          <span><kbd class="font-mono bg-slate-800 px-1 py-0.5 rounded text-slate-300">↵</kbd> Abrir</span>
+          <span><kbd class="font-mono bg-slate-800 px-1 py-0.5 rounded text-slate-300">Esc</kbd> Cerrar</span>
         </div>
         <span class="text-violet-400 font-mono font-semibold">DevToolkit Cmd+K</span>
       </div>
@@ -202,9 +202,9 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 w-full">
     <div class="ad-placeholder rounded-2xl p-4 flex flex-col items-center justify-center min-h-[90px] text-center">
       <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-400 mb-1">
-        <i data-lucide="badge-dollar-sign" class="w-4 h-4 text-violet-400"></i> Espai Publicitari Google AdSense (Top Tech Leaderboard)
+        <i data-lucide="badge-dollar-sign" class="w-4 h-4 text-violet-400"></i> Espacio Publicitario Google AdSense (Top Tech Leaderboard)
       </div>
-      <p class="text-xs text-slate-500">Anuncis de proveïdors cloud (AWS, Google Cloud, DigitalOcean), eines SaaS i seguretat de màxim CPC tecnològic.</p>
+      <p class="text-xs text-slate-500">Anuncios de proveedores cloud (AWS, Google Cloud, DigitalOcean), herramientas SaaS y seguridad de máximo CPC tecnológico.</p>
     </div>
   </div>
 
@@ -214,13 +214,13 @@
     <!-- HERO -->
     <div class="text-center max-w-3xl mx-auto mb-10">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-violet-950/80 border border-violet-800/60 text-violet-300 mb-3">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> 8 Eines 100% Client-Side • Privadesa absoluta i zero latència
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> 8 Herramientas 100% Client-Side • Privacidad absoluta y cero latencia
       </div>
       <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
-        Eines de Desenvolupament Web <span class="bg-gradient-to-r from-violet-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">Ultra-Ràpides</span>
+        Herramientas de Desarrollo Web <span class="bg-gradient-to-r from-violet-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">Ultra-Rápidas</span>
       </h1>
       <p class="mt-3 text-slate-400 text-sm sm:text-base">
-        Formatadors de codi, generadors CSS, codificadors Base64 & URL, provador de Regex, generador de UUIDs v4 i verificadors WCAG. Execució segura en local al teu navegador.
+        Formateadores de código, generadores CSS, codificadores Base64 & URL, probador de Regex, generador de UUIDs v4 y verificadores WCAG. Ejecución segura en local en tu navegador.
       </p>
     </div>
 
@@ -230,27 +230,27 @@
         <div class="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-slate-800 mb-4">
           <div class="flex items-center gap-2">
             <i data-lucide="code-2" class="w-5 h-5 text-violet-400"></i>
-            <h2 class="text-base font-bold">Validador i Formatejador JSON</h2>
-            <span id="json-badge" class="text-[11px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-300">Preparat</span>
+            <h2 class="text-base font-bold">Validador y Formateador JSON</h2>
+            <span id="json-badge" class="text-[11px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-300">Listo</span>
           </div>
           <div class="flex items-center gap-2 flex-wrap">
             <button onclick="formatJSON(2)" class="px-3 py-1.5 rounded-lg bg-violet-600 hover:bg-violet-700 text-xs font-semibold flex items-center gap-1.5 transition-colors">
-              <i data-lucide="align-left" class="w-3.5 h-3.5"></i> Formatar (2 espais)
+              <i data-lucide="align-left" class="w-3.5 h-3.5"></i> Formatear (2 espacios)
             </button>
             <button onclick="formatJSON(4)" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold flex items-center gap-1.5 transition-colors">
-              4 espais
+              4 espacios
             </button>
             <button onclick="minifyJSON()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold flex items-center gap-1.5 transition-colors">
               <i data-lucide="minimize-2" class="w-3.5 h-3.5"></i> Minificar
             </button>
             <button onclick="loadSampleJSON()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-300 transition-colors">
-              Exemple
+              Ejemplo
             </button>
             <button onclick="copyJSON()" class="px-3 py-1.5 rounded-lg border border-slate-700 hover:bg-slate-800 text-xs font-semibold flex items-center gap-1.5 transition-colors text-slate-200">
               <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copiar
             </button>
             <button onclick="clearJSON()" class="px-3 py-1.5 rounded-lg border border-slate-800 hover:bg-slate-800 text-xs font-semibold text-rose-400 transition-colors">
-              Netejar
+              Limpiar
             </button>
           </div>
         </div>
@@ -259,10 +259,10 @@
           <!-- Raw Input -->
           <div>
             <div class="flex justify-between text-xs text-slate-400 mb-1.5 font-mono">
-              <span>ENTRADA (JSON En brut)</span>
+              <span>ENTRADA (JSON En bruto)</span>
               <span id="json-input-stats">0 bytes</span>
             </div>
-            <textarea id="json-input" rows="16" placeholder='Enganxa aquí el teu codi JSON (ex: {"nom": "DevToolkit", "actiu": true})...'
+            <textarea id="json-input" rows="16" placeholder='Pega aquí tu código JSON (ej: {"nombre": "DevToolkit", "activo": true})...'
               class="w-full p-4 rounded-xl bg-slate-900 border border-slate-800 focus:ring-2 focus:ring-violet-500 code-editor text-xs leading-relaxed text-slate-200 resize-none font-mono"
               oninput="handleJSONInput()"></textarea>
           </div>
@@ -270,17 +270,17 @@
           <!-- Formatted Output -->
           <div>
             <div class="flex justify-between text-xs text-slate-400 mb-1.5 font-mono">
-              <span>SORTIDA FORMATEJADA & VALIDADA</span>
+              <span>SALIDA FORMATEADA & VALIDADA</span>
               <span id="json-output-stats">0 bytes</span>
             </div>
-            <textarea id="json-output" rows="16" readonly placeholder="El JSON net i indetat apareixerà aquí..."
+            <textarea id="json-output" rows="16" readonly placeholder="El JSON limpio e indentado aparecerá aquí..."
               class="w-full p-4 rounded-xl bg-slate-900/90 border border-slate-800 code-editor text-xs leading-relaxed text-emerald-400 resize-none font-mono"></textarea>
           </div>
         </div>
 
         <div id="json-error-box" class="mt-4 p-3 rounded-xl bg-rose-950/50 border border-rose-800/80 text-rose-300 text-xs hidden flex items-center gap-2">
           <i data-lucide="alert-triangle" class="w-4 h-4 shrink-0 text-rose-400"></i>
-          <span id="json-error-msg">Error de sintaxi detectat.</span>
+          <span id="json-error-msg">Error de sintaxis detectado.</span>
         </div>
       </div>
     </section>
@@ -290,9 +290,9 @@
       <div class="glass-panel rounded-2xl p-6 sm:p-8 shadow-2xl">
         <div class="pb-4 border-b border-slate-800 mb-6">
           <h2 class="text-lg font-bold flex items-center gap-2">
-            <i data-lucide="layers" class="w-5 h-5 text-indigo-400"></i> Generador de Glassmorphism & Ombres Suaus CSS
+            <i data-lucide="layers" class="w-5 h-5 text-indigo-400"></i> Generador de Glassmorphism & Sombras Suaves CSS
           </h2>
-          <p class="text-xs text-slate-400 mt-1">Crea efectes de vidre esmerilat i ombres volumètriques modernes i obté el codi CSS compatible llest per a copiar.</p>
+          <p class="text-xs text-slate-400 mt-1">Crea efectos de vidrio esmerilado y sombras volumétricas modernas y obtén el código CSS compatible listo para copiar.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -300,7 +300,7 @@
           <div class="lg:col-span-5 space-y-4">
             <div>
               <div class="flex justify-between text-xs font-mono text-slate-400 mb-1">
-                <span>Desenfocament (Blur)</span>
+                <span>Desenfoque (Blur)</span>
                 <span id="val_blur">16px</span>
               </div>
               <input type="range" id="slider_blur" min="0" max="40" value="16" class="w-full accent-indigo-500" oninput="updateGlass()">
@@ -308,7 +308,7 @@
 
             <div>
               <div class="flex justify-between text-xs font-mono text-slate-400 mb-1">
-                <span>Opacitat del fons</span>
+                <span>Opacidad del fondo</span>
                 <span id="val_opacity">0.25</span>
               </div>
               <input type="range" id="slider_opacity" min="0.05" max="0.95" step="0.05" value="0.25" class="w-full accent-indigo-500" oninput="updateGlass()">
@@ -316,7 +316,7 @@
 
             <div>
               <div class="flex justify-between text-xs font-mono text-slate-400 mb-1">
-                <span>Opacitat de la vora</span>
+                <span>Opacidad del borde</span>
                 <span id="val_border">0.3</span>
               </div>
               <input type="range" id="slider_border" min="0" max="1" step="0.05" value="0.3" class="w-full accent-indigo-500" oninput="updateGlass()">
@@ -324,17 +324,17 @@
 
             <div>
               <div class="flex justify-between text-xs font-mono text-slate-400 mb-1">
-                <span>Elevació de l'ombra</span>
+                <span>Elevación de la sombra</span>
                 <span id="val_shadow">25px</span>
               </div>
               <input type="range" id="slider_shadow" min="0" max="50" value="25" class="w-full accent-indigo-500" oninput="updateGlass()">
             </div>
 
             <div>
-              <label class="block text-xs font-mono text-slate-400 mb-1">Color del vidre</label>
+              <label class="block text-xs font-mono text-slate-400 mb-1">Color del vidrio</label>
               <div class="flex gap-2">
                 <input type="color" id="glass_color" value="#ffffff" class="w-10 h-10 rounded-lg cursor-pointer bg-transparent border border-slate-700" oninput="updateGlass()">
-                <span class="text-xs font-mono text-slate-400 self-center">Fons blanc o personalitzat</span>
+                <span class="text-xs font-mono text-slate-400 self-center">Fondo blanco o personalizado</span>
               </div>
             </div>
           </div>
@@ -351,15 +351,15 @@
                 <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center mx-auto mb-2">
                   <i data-lucide="sparkles" class="w-5 h-5 text-white"></i>
                 </div>
-                <h3 class="font-bold text-base">Efecte Glassmorphism</h3>
-                <p class="text-xs text-white/80 mt-1">Aquest és l'aspecte real del panell aplicat sobre fons gràfics moderns.</p>
+                <h3 class="font-bold text-base">Efecto Glassmorphism</h3>
+                <p class="text-xs text-white/80 mt-1">Este es el aspecto real del panel aplicado sobre fondos gráficos modernos.</p>
               </div>
             </div>
 
             <!-- Code Output -->
             <div class="relative">
               <div class="flex justify-between text-xs text-slate-400 mb-1.5 font-mono">
-                <span>CODI CSS LLEST PER USAR</span>
+                <span>CÓDIGO CSS LISTO PARA USAR</span>
                 <button onclick="copyCSS()" class="text-indigo-400 hover:text-indigo-300 font-bold flex items-center gap-1">
                   <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copiar CSS
                 </button>
@@ -376,30 +376,30 @@
       <div class="glass-panel rounded-2xl p-6 sm:p-8 shadow-2xl">
         <div class="pb-4 border-b border-slate-800 mb-6">
           <h2 class="text-lg font-bold flex items-center gap-2">
-            <i data-lucide="share-2" class="w-5 h-5 text-cyan-400"></i> Generador de Meta Tags i Targetes Open Graph (SEO)
+            <i data-lucide="share-2" class="w-5 h-5 text-cyan-400"></i> Generador de Meta Tags y Tarjetas Open Graph (SEO)
           </h2>
-          <p class="text-xs text-slate-400 mt-1">Configura com es veurà la teva pàgina web a Google, Twitter / X, LinkedIn i WhatsApp en compartir l'enllaç.</p>
+          <p class="text-xs text-slate-400 mt-1">Configura cómo se verá tu página web en Google, Twitter / X, LinkedIn y WhatsApp al compartir el enlace.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div class="lg:col-span-6 space-y-4">
             <div>
-              <label class="block text-xs font-semibold text-slate-400 mb-1">Títol de la Pàgina (Title)</label>
-              <input type="text" id="og_title" value="El meu lloc web increïble | Eines i Guies" class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-white focus:ring-2 focus:ring-cyan-500" oninput="updateOG()">
+              <label class="block text-xs font-semibold text-slate-400 mb-1">Título de la Página (Title)</label>
+              <input type="text" id="og_title" value="Mi sitio web increíble | Herramientas y Guías" class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-white focus:ring-2 focus:ring-cyan-500" oninput="updateOG()">
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-slate-400 mb-1">Descripció SEO (Description)</label>
-              <textarea id="og_desc" rows="3" class="w-full p-3 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-white focus:ring-2 focus:ring-cyan-500" oninput="updateOG()">Descobreix les millors eines gratuïtes i tutorials d'última generació per impulsar els teus projectes a Internet.</textarea>
+              <label class="block text-xs font-semibold text-slate-400 mb-1">Descripción SEO (Description)</label>
+              <textarea id="og_desc" rows="3" class="w-full p-3 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-white focus:ring-2 focus:ring-cyan-500" oninput="updateOG()">Descubre las mejores herramientas gratuitas y tutoriales de última generación para impulsar tus proyectos en Internet.</textarea>
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-slate-400 mb-1">URL de la Pàgina Web</label>
-              <input type="url" id="og_url" value="https://exemple.cat" class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-white focus:ring-2 focus:ring-cyan-500" oninput="updateOG()">
+              <label class="block text-xs font-semibold text-slate-400 mb-1">URL de la Página Web</label>
+              <input type="url" id="og_url" value="https://ejemplo.com" class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-white focus:ring-2 focus:ring-cyan-500" oninput="updateOG()">
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-slate-400 mb-1">URL de la Imatge Destacada (og:image 1200x630)</label>
+              <label class="block text-xs font-semibold text-slate-400 mb-1">URL de la Imagen Destacada (og:image 1200x630)</label>
               <input type="url" id="og_image" value="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-white focus:ring-2 focus:ring-cyan-500" oninput="updateOG()">
             </div>
           </div>
@@ -407,13 +407,13 @@
           <div class="lg:col-span-6 space-y-6">
             <!-- Social Card Live Preview -->
             <div>
-              <div class="text-xs font-mono text-slate-400 mb-2">PREVISUALITZACIÓ A LES XARXES SOCIALS</div>
+              <div class="text-xs font-mono text-slate-400 mb-2">PREVISUALIZACIÓN EN REDES SOCIALES</div>
               <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 max-w-md mx-auto shadow-lg">
                 <img id="og_preview_img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" class="w-full h-44 object-cover" alt="Preview">
                 <div class="p-4">
-                  <div class="text-[11px] text-slate-400 font-mono" id="og_preview_domain">exemple.cat</div>
-                  <h4 class="font-bold text-sm text-slate-100 mt-1 line-clamp-1" id="og_preview_title">El meu lloc web increïble | Eines i Guies</h4>
-                  <p class="text-xs text-slate-400 mt-1 line-clamp-2" id="og_preview_desc">Descobreix les millors eines gratuïtes i tutorials d'última generació per impulsar els teus projectes a Internet.</p>
+                  <div class="text-[11px] text-slate-400 font-mono" id="og_preview_domain">ejemplo.com</div>
+                  <h4 class="font-bold text-sm text-slate-100 mt-1 line-clamp-1" id="og_preview_title">Mi sitio web increíble | Herramientas y Guías</h4>
+                  <p class="text-xs text-slate-400 mt-1 line-clamp-2" id="og_preview_desc">Descubre las mejores herramientas gratuitas y tutoriales de última generación para impulsar tus proyectos en Internet.</p>
                 </div>
               </div>
             </div>
@@ -421,7 +421,7 @@
             <!-- Code Output -->
             <div>
               <div class="flex justify-between text-xs text-slate-400 mb-1.5 font-mono">
-                <span>ETIQUETES HTML PER ENGANXAR AL &lt;HEAD&gt;</span>
+                <span>ETIQUETAS HTML PARA PEGAR EN EL &lt;HEAD&gt;</span>
                 <button onclick="copyMeta()" class="text-cyan-400 hover:text-cyan-300 font-bold flex items-center gap-1">
                   <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copiar Tags
                 </button>
@@ -441,7 +441,7 @@
             <h2 class="text-lg font-bold flex items-center gap-2">
               <i data-lucide="binary" class="w-5 h-5 text-cyan-400"></i> Base64 & URL Encoder / Decoder
             </h2>
-            <p class="text-xs text-slate-400 mt-1">Converteix text pla o dades a format Base64 i URL-encoded amb suport complet per a caràcters internacionals UTF-8.</p>
+            <p class="text-xs text-slate-400 mt-1">Convierte texto plano o datos a formato Base64 y URL-encoded con soporte completo para caracteres internacionales UTF-8.</p>
           </div>
           
           <!-- Mode Tabs: Base64 vs URL -->
@@ -462,27 +462,27 @@
               <i data-lucide="lock" class="w-3.5 h-3.5"></i> Codificar (Encode)
             </button>
             <button onclick="runB64Process('decode')" class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs flex items-center gap-1.5 transition-colors shadow">
-              <i data-lucide="unlock" class="w-3.5 h-3.5"></i> Descodificar (Decode)
+              <i data-lucide="unlock" class="w-3.5 h-3.5"></i> Decodificar (Decode)
             </button>
             <button onclick="swapB64()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs flex items-center gap-1.5 transition-colors">
-              <i data-lucide="arrow-left-right" class="w-3.5 h-3.5"></i> Intercanviar
+              <i data-lucide="arrow-left-right" class="w-3.5 h-3.5"></i> Intercambiar
             </button>
             <button onclick="loadB64Sample()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs transition-colors">
-              Exemple
+              Ejemplo
             </button>
             <button onclick="clearB64()" class="px-3 py-1.5 rounded-lg border border-slate-800 hover:bg-slate-800 text-rose-400 font-semibold text-xs transition-colors">
-              Netejar
+              Limpiar
             </button>
           </div>
 
           <div class="flex items-center gap-4 text-xs text-slate-300">
             <label id="b64-urlsafe-label" class="flex items-center gap-1.5 cursor-pointer">
               <input type="checkbox" id="b64-urlsafe" class="rounded border-slate-700 bg-slate-900 accent-violet-500" onchange="runB64Process('encode')">
-              <span>URL-Safe (- i _)</span>
+              <span>URL-Safe (- y _)</span>
             </label>
             <label class="flex items-center gap-1.5 cursor-pointer">
               <input type="checkbox" id="b64-live" checked class="rounded border-slate-700 bg-slate-900 accent-violet-500">
-              <span>En temps real</span>
+              <span>En tiempo real</span>
             </label>
           </div>
         </div>
@@ -491,10 +491,10 @@
           <!-- Input -->
           <div>
             <div class="flex justify-between text-xs text-slate-400 mb-1.5 font-mono">
-              <span id="b64-input-title">TEXT D'ENTRADA</span>
-              <span id="b64-input-stats">0 caràcters • 0 bytes</span>
+              <span id="b64-input-title">TEXTO DE ENTRADA</span>
+              <span id="b64-input-stats">0 caracteres • 0 bytes</span>
             </div>
-            <textarea id="b64-input" rows="12" placeholder="Escriu o enganxa aquí el text o codi..."
+            <textarea id="b64-input" rows="12" placeholder="Escribe o pega aquí el texto o código..."
               class="w-full p-4 rounded-xl bg-slate-900 border border-slate-800 focus:ring-2 focus:ring-violet-500 code-editor text-xs leading-relaxed text-slate-200 resize-none font-mono"
               oninput="handleB64Input()"></textarea>
           </div>
@@ -502,7 +502,7 @@
           <!-- Output -->
           <div>
             <div class="flex justify-between text-xs text-slate-400 mb-1.5 font-mono">
-              <span id="b64-output-title">RESULTAT CONVERTIT</span>
+              <span id="b64-output-title">RESULTADO CONVERTIDO</span>
               <div class="flex items-center gap-2">
                 <span id="b64-output-stats">0 bytes</span>
                 <button onclick="copyB64Output()" class="text-cyan-400 hover:text-cyan-300 font-bold flex items-center gap-1">
@@ -510,7 +510,7 @@
                 </button>
               </div>
             </div>
-            <textarea id="b64-output" rows="12" readonly placeholder="El resultat codificat o descodificat apareixerà aquí..."
+            <textarea id="b64-output" rows="12" readonly placeholder="El resultado codificado o decodificado aparecerá aquí..."
               class="w-full p-4 rounded-xl bg-slate-900/90 border border-slate-800 code-editor text-xs leading-relaxed text-cyan-300 resize-none font-mono"></textarea>
           </div>
         </div>
@@ -518,7 +518,7 @@
         <!-- Error banner -->
         <div id="b64-error-box" class="mt-4 p-3 rounded-xl bg-rose-950/50 border border-rose-800/80 text-rose-300 text-xs hidden flex items-center gap-2">
           <i data-lucide="alert-triangle" class="w-4 h-4 shrink-0 text-rose-400"></i>
-          <span id="b64-error-msg">Cadena no vàlida per a la conversió.</span>
+          <span id="b64-error-msg">Cadena no válida para la conversión.</span>
         </div>
       </div>
     </section>
@@ -530,24 +530,24 @@
           <div class="flex flex-wrap items-center justify-between gap-4">
             <div>
               <h2 class="text-lg font-bold flex items-center gap-2">
-                <i data-lucide="scan-search" class="w-5 h-5 text-emerald-400"></i> Regex Tester en Temps Real
+                <i data-lucide="scan-search" class="w-5 h-5 text-emerald-400"></i> Regex Tester en Tiempo Real
               </h2>
-              <p class="text-xs text-slate-400 mt-1">Valida patrons d'expressions regulars amb destacat visual en viu i llista de grups de captura.</p>
+              <p class="text-xs text-slate-400 mt-1">Valida patrones de expresiones regulares con resaltado visual en vivo y lista de grupos de captura.</p>
             </div>
             
             <!-- Common Presets Dropdown -->
             <div class="flex items-center gap-2">
-              <span class="text-xs text-slate-400">Patrons habituals:</span>
+              <span class="text-xs text-slate-400">Patrones habituales:</span>
               <select id="regex-presets" onchange="applyRegexPreset(this.value)" class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700 text-xs font-medium text-emerald-400 focus:ring-2 focus:ring-emerald-500">
-                <option value="">Selecciona un patró ràpid...</option>
-                <option value="email">Correu Electrònic (Email)</option>
+                <option value="">Selecciona un patrón rápido...</option>
+                <option value="email">Correo Electrónico (Email)</option>
                 <option value="url">URL Web (HTTP / HTTPS)</option>
-                <option value="ipv4">Adreça IPv4</option>
-                <option value="date">Data ISO (YYYY-MM-DD)</option>
-                <option value="hex">Codi Hexadecimal de Color</option>
-                <option value="phone">Telèfon Internacional</option>
+                <option value="ipv4">Dirección IPv4</option>
+                <option value="date">Fecha ISO (YYYY-MM-DD)</option>
+                <option value="hex">Código Hexadecimal de Color</option>
+                <option value="phone">Teléfono Internacional</option>
                 <option value="slug">Slug Web (kebab-case)</option>
-                <option value="number">Nombres Enters i Decimals</option>
+                <option value="number">Números Enteros y Decimales</option>
               </select>
             </div>
           </div>
@@ -556,7 +556,7 @@
         <div class="space-y-6">
           <!-- Pattern and Flags Input -->
           <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
-            <label class="block text-xs font-semibold text-slate-400">Expressió Regular (Patró i Flags)</label>
+            <label class="block text-xs font-semibold text-slate-400">Expresión Regular (Patrón y Flags)</label>
             <div class="flex items-center gap-2">
               <span class="text-lg font-mono text-slate-500">/</span>
               <input type="text" id="regex-pattern" value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Ex: \b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b"
@@ -582,7 +582,7 @@
             <!-- Error message if regex is broken -->
             <div id="regex-error-box" class="p-2.5 rounded-lg bg-rose-950/60 border border-rose-800 text-rose-300 text-xs hidden flex items-center gap-2">
               <i data-lucide="alert-circle" class="w-4 h-4 shrink-0 text-rose-400"></i>
-              <span id="regex-error-msg">Sintaxi de regex incorrecta.</span>
+              <span id="regex-error-msg">Sintaxis de regex incorrecta.</span>
             </div>
           </div>
 
@@ -590,18 +590,18 @@
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div>
               <div class="flex justify-between text-xs text-slate-400 mb-1.5 font-mono">
-                <span>CADENA DE TEXT DE PROVA</span>
-                <button onclick="loadSampleRegexText()" class="text-emerald-400 hover:text-emerald-300 font-bold">Carregar mostra</button>
+                <span>CADENA DE TEXTO DE PRUEBA</span>
+                <button onclick="loadSampleRegexText()" class="text-emerald-400 hover:text-emerald-300 font-bold">Cargar muestra</button>
               </div>
-              <textarea id="regex-test-text" rows="10" placeholder="Enganxa el text sobre el qual vols provar l'expressió regular..."
+              <textarea id="regex-test-text" rows="10" placeholder="Pega el texto sobre el que deseas probar la expresión regular..."
                 class="w-full p-4 rounded-xl bg-slate-900 border border-slate-800 focus:ring-2 focus:ring-emerald-500 code-editor text-xs leading-relaxed text-slate-200 resize-none font-mono"
-                oninput="testRegex()">Pots contactar amb suport a suport@exemple.cat o bé a l'adreça tècnica dev.team@suite.io per resoldre dubtes. Un altre correu no vàlid seria usuari@domini sense tld.</textarea>
+                oninput="testRegex()">Puedes contactar con soporte en soporte@ejemplo.com o bien en la dirección técnica dev.team@suite.io para resolver dudas. Otro correo no válido sería usuario@dominio sin tld.</textarea>
             </div>
 
             <div>
               <div class="flex justify-between text-xs text-slate-400 mb-1.5 font-mono">
-                <span>RESULTAT DESTACAT EN VIU</span>
-                <span id="regex-match-count" class="text-emerald-400 font-bold">2 coincidències</span>
+                <span>RESULTADO RESALTADO EN VIVO</span>
+                <span id="regex-match-count" class="text-emerald-400 font-bold">2 coincidencias</span>
               </div>
               <div id="regex-highlight-box" class="w-full h-[178px] p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-xs leading-relaxed text-slate-300 overflow-y-auto font-mono whitespace-pre-wrap regex-highlight"></div>
             </div>
@@ -610,8 +610,8 @@
           <!-- Matches Details Table -->
           <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
             <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-3 flex items-center justify-between">
-              <span>Desglossament de Coincidències i Grups de Captura</span>
-              <span id="regex-stats-summary" class="text-[11px] text-slate-500">Temps d'execució: &lt;1ms</span>
+              <span>Desglose de Coincidencias y Grupos de Captura</span>
+              <span id="regex-stats-summary" class="text-[11px] text-slate-500">Tiempo de ejecución: &lt;1ms</span>
             </h4>
             <div id="regex-matches-list" class="max-h-60 overflow-y-auto space-y-2">
               <!-- Rendered dynamically -->
@@ -627,13 +627,13 @@
         <div class="pb-4 border-b border-slate-800 mb-6 flex flex-wrap items-center justify-between gap-4">
           <div>
             <h2 class="text-lg font-bold flex items-center gap-2">
-              <i data-lucide="fingerprint" class="w-5 h-5 text-indigo-400"></i> Generador de UUID v4 Criptogràfic
+              <i data-lucide="fingerprint" class="w-5 h-5 text-indigo-400"></i> Generador de UUID v4 Criptográfico
             </h2>
-            <p class="text-xs text-slate-400 mt-1">Crea identificadors únics universals (RFC 4122) generats aleatòriament amb entropia màxima mitjançant window.crypto.</p>
+            <p class="text-xs text-slate-400 mt-1">Crea identificadores únicos universales (RFC 4122) generados aleatoriamente con entropía máxima mediante window.crypto.</p>
           </div>
           
           <button onclick="generateUUIDs()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs flex items-center gap-2 transition-colors shadow-lg shadow-indigo-600/25">
-            <i data-lucide="refresh-cw" class="w-4 h-4"></i> Generar Nous UUIDs
+            <i data-lucide="refresh-cw" class="w-4 h-4"></i> Generar Nuevos UUIDs
           </button>
         </div>
 
@@ -641,8 +641,8 @@
           <!-- Featured Single UUID Card -->
           <div class="p-5 rounded-2xl bg-gradient-to-r from-indigo-950/60 via-slate-900 to-purple-950/60 border border-indigo-800/60">
             <div class="flex items-center justify-between text-xs text-indigo-300 font-mono mb-2">
-              <span>UUID V4 PRINCIPAL GENERAT</span>
-              <span class="text-emerald-400 flex items-center gap-1"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Criptogràficament Segur</span>
+              <span>UUID V4 PRINCIPAL GENERADO</span>
+              <span class="text-emerald-400 flex items-center gap-1"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Criptográficamente Seguro</span>
             </div>
             <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
               <div id="uuid-primary" class="font-mono text-base sm:text-xl font-bold text-white tracking-wider break-all select-all">
@@ -659,7 +659,7 @@
           <!-- Controls for batch generation -->
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-slate-900/60 p-4 rounded-xl border border-slate-800">
             <div>
-              <label class="block text-xs font-semibold text-slate-400 mb-1.5">Quantitat per Lot</label>
+              <label class="block text-xs font-semibold text-slate-400 mb-1.5">Cantidad por Lote</label>
               <select id="uuid-count" onchange="generateUUIDs()" class="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-xs font-mono text-white">
                 <option value="1">1 UUID</option>
                 <option value="5" selected>5 UUIDs</option>
@@ -670,21 +670,21 @@
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-slate-400 mb-1.5">Format de Lletres</label>
+              <label class="block text-xs font-semibold text-slate-400 mb-1.5">Formato de Letras</label>
               <select id="uuid-casing" onchange="generateUUIDs()" class="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-xs font-mono text-white">
-                <option value="lower" selected>Minúscules (standard)</option>
-                <option value="upper">Majúscules (UPPERCASE)</option>
+                <option value="lower" selected>Minúsculas (estándar)</option>
+                <option value="upper">Mayúsculas (MAYÚSCULAS)</option>
               </select>
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-slate-400 mb-1.5">Format d'Embolcall</label>
+              <label class="block text-xs font-semibold text-slate-400 mb-1.5">Formato de Salida</label>
               <select id="uuid-format" onchange="generateUUIDs()" class="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-xs font-mono text-white">
-                <option value="plain" selected>Línies de text net</option>
-                <option value="quotes-double">Cometes dobles ("...")</option>
-                <option value="quotes-single">Cometes simples ('...')</option>
+                <option value="plain" selected>Líneas de texto plano</option>
+                <option value="quotes-double">Comillas dobles ("...")</option>
+                <option value="quotes-single">Comillas simples ('...')</option>
                 <option value="json">Array JSON ["...", "..."]</option>
-                <option value="nohyphen">Sense guions (32 hex)</option>
+                <option value="nohyphen">Sin guiones (32 hex)</option>
               </select>
             </div>
           </div>
@@ -692,13 +692,13 @@
           <!-- Batch Output Box -->
           <div>
             <div class="flex justify-between text-xs text-slate-400 mb-1.5 font-mono">
-              <span id="uuid-batch-count-label">LLISTA DE UUIDs GENERATS</span>
+              <span id="uuid-batch-count-label">LISTA DE UUIDs GENERADOS</span>
               <div class="flex items-center gap-3">
                 <button onclick="downloadUUIDs()" class="text-indigo-400 hover:text-indigo-300 font-bold flex items-center gap-1">
-                  <i data-lucide="download" class="w-3.5 h-3.5"></i> Descarregar .txt
+                  <i data-lucide="download" class="w-3.5 h-3.5"></i> Descargar .txt
                 </button>
                 <button onclick="copyAllUUIDs()" class="text-indigo-400 hover:text-indigo-300 font-bold flex items-center gap-1">
-                  <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copiar Tots
+                  <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copiar Todos
                 </button>
               </div>
             </div>
@@ -714,9 +714,9 @@
       <div class="max-w-2xl mx-auto glass-panel rounded-2xl p-6 sm:p-8 shadow-2xl">
         <div class="pb-4 border-b border-slate-800 mb-6">
           <h2 class="text-lg font-bold flex items-center gap-2">
-            <i data-lucide="key" class="w-5 h-5 text-emerald-400"></i> Generador de Contrasenyes i Tokens Criptogràfics
+            <i data-lucide="key" class="w-5 h-5 text-emerald-400"></i> Generador de Contraseñas y Tokens Criptográficos
           </h2>
-          <p class="text-xs text-slate-400 mt-1">Generació 100% segura mitjançant l'API estàndard window.crypto del teu navegador (mai s'envia a cap servidor).</p>
+          <p class="text-xs text-slate-400 mt-1">Generación 100% segura mediante la API estándar window.crypto de tu navegador (nunca se envía a ningún servidor).</p>
         </div>
 
         <div class="space-y-6">
@@ -732,8 +732,8 @@
           <div class="space-y-4">
             <div>
               <div class="flex justify-between text-xs font-mono text-slate-400 mb-1">
-                <span>Longitud: <strong id="pass_len_val" class="text-white">24 caràcters</strong></span>
-                <span id="pass_strength" class="text-emerald-400 font-semibold">Molt Segura</span>
+                <span>Longitud: <strong id="pass_len_val" class="text-white">24 caracteres</strong></span>
+                <span id="pass_strength" class="text-emerald-400 font-semibold">Muy Segura</span>
               </div>
               <input type="range" id="pass_length" min="8" max="64" value="24" class="w-full accent-emerald-500" oninput="updatePassword()">
             </div>
@@ -741,11 +741,11 @@
             <div class="grid grid-cols-2 gap-3 pt-2">
               <label class="flex items-center gap-2 text-xs text-slate-300 cursor-pointer">
                 <input type="checkbox" id="pass_upper" checked class="rounded border-slate-700 bg-slate-900 accent-emerald-500" onchange="updatePassword()">
-                Majúscules (A-Z)
+                Mayúsculas (A-Z)
               </label>
               <label class="flex items-center gap-2 text-xs text-slate-300 cursor-pointer">
                 <input type="checkbox" id="pass_lower" checked class="rounded border-slate-700 bg-slate-900 accent-emerald-500" onchange="updatePassword()">
-                Minúscules (a-z)
+                Minúsculas (a-z)
               </label>
               <label class="flex items-center gap-2 text-xs text-slate-300 cursor-pointer">
                 <input type="checkbox" id="pass_num" checked class="rounded border-slate-700 bg-slate-900 accent-emerald-500" onchange="updatePassword()">
@@ -753,12 +753,12 @@
               </label>
               <label class="flex items-center gap-2 text-xs text-slate-300 cursor-pointer">
                 <input type="checkbox" id="pass_sym" checked class="rounded border-slate-700 bg-slate-900 accent-emerald-500" onchange="updatePassword()">
-                Símbols (!@#$%^&*)
+                Símbolos (!@#$%^&*)
               </label>
             </div>
 
             <button onclick="updatePassword()" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 font-semibold text-xs flex items-center justify-center gap-2 transition-colors text-slate-200">
-              <i data-lucide="refresh-cw" class="w-4 h-4"></i> Generar nova contrasenya
+              <i data-lucide="refresh-cw" class="w-4 h-4"></i> Generar nueva contraseña
             </button>
           </div>
         </div>
@@ -770,15 +770,15 @@
       <div class="max-w-3xl mx-auto glass-panel rounded-2xl p-6 sm:p-8 shadow-2xl">
         <div class="pb-4 border-b border-slate-800 mb-6">
           <h2 class="text-lg font-bold flex items-center gap-2">
-            <i data-lucide="eye" class="w-5 h-5 text-amber-400"></i> Comprovador d'Accessibilitat i Contrast WCAG 2.1
+            <i data-lucide="eye" class="w-5 h-5 text-amber-400"></i> Comprobador de Accesibilidad y Contraste WCAG 2.1
           </h2>
-          <p class="text-xs text-slate-400 mt-1">Verifica si la combinació del color del text i el fons compleix amb els estàndards oficials AA i AAA d'accessibilitat web.</p>
+          <p class="text-xs text-slate-400 mt-1">Verifica si la combinación del color del texto y el fondo cumple con los estándares oficiales AA y AAA de accesibilidad web.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           <div class="space-y-4">
             <div>
-              <label class="block text-xs font-semibold text-slate-400 mb-1">Color del Text (Foreground)</label>
+              <label class="block text-xs font-semibold text-slate-400 mb-1">Color del Texto (Foreground)</label>
               <div class="flex items-center gap-3">
                 <input type="color" id="wcag_fg" value="#ffffff" class="w-12 h-10 rounded-lg cursor-pointer bg-transparent border border-slate-700" oninput="updateWCAG()">
                 <input type="text" id="wcag_fg_hex" value="#ffffff" class="w-32 px-3 py-2 rounded-lg bg-slate-900 border border-slate-800 font-mono text-xs uppercase" oninput="syncHexToPicker('fg')">
@@ -786,7 +786,7 @@
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-slate-400 mb-1">Color del Fons (Background)</label>
+              <label class="block text-xs font-semibold text-slate-400 mb-1">Color del Fondo (Background)</label>
               <div class="flex items-center gap-3">
                 <input type="color" id="wcag_bg" value="#0f172a" class="w-12 h-10 rounded-lg cursor-pointer bg-transparent border border-slate-700" oninput="updateWCAG()">
                 <input type="text" id="wcag_bg_hex" value="#0f172a" class="w-32 px-3 py-2 rounded-lg bg-slate-900 border border-slate-800 font-mono text-xs uppercase" oninput="syncHexToPicker('bg')">
@@ -797,23 +797,23 @@
           <!-- Preview & Ratio Badge -->
           <div class="space-y-4">
             <div id="wcag_preview_box" class="p-6 rounded-2xl border border-slate-700 text-center transition-colors">
-              <h4 class="text-lg font-bold">Text de Mostra</h4>
-              <p class="text-xs mt-1">Aquest text exemplifica la llegibilitat segons el contrast seleccionat.</p>
+              <h4 class="text-lg font-bold">Texto de Muestra</h4>
+              <p class="text-xs mt-1">Este texto ejemplifica la legibilidad según el contraste seleccionado.</p>
             </div>
 
             <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
               <div class="flex items-center justify-between">
-                <span class="text-xs text-slate-400 font-mono">RÀTIO DE CONTRAST</span>
+                <span class="text-xs text-slate-400 font-mono">RATIO DE CONTRASTE</span>
                 <span id="wcag_ratio" class="text-xl font-black font-mono text-emerald-400">15.4 : 1</span>
               </div>
               <div class="grid grid-cols-2 gap-2 mt-3 pt-3 border-t border-slate-800 text-xs">
                 <div class="flex items-center justify-between">
                   <span class="text-slate-400">WCAG AA:</span>
-                  <span id="wcag_aa" class="font-bold text-emerald-400">APROVAT</span>
+                  <span id="wcag_aa" class="font-bold text-emerald-400">APROBADO</span>
                 </div>
                 <div class="flex items-center justify-between">
                   <span class="text-slate-400">WCAG AAA:</span>
-                  <span id="wcag_aaa" class="font-bold text-emerald-400">APROVAT</span>
+                  <span id="wcag_aaa" class="font-bold text-emerald-400">APROBADO</span>
                 </div>
               </div>
             </div>
@@ -826,17 +826,17 @@
     <div class="my-12">
       <div class="ad-placeholder rounded-2xl p-6 flex flex-col items-center justify-center min-h-[120px] text-center">
         <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-400 mb-1">
-          <i data-lucide="badge-dollar-sign" class="w-4 h-4 text-violet-400"></i> Espai Publicitari Google AdSense (In-Feed Tech Banner)
+          <i data-lucide="badge-dollar-sign" class="w-4 h-4 text-violet-400"></i> Espacio Publicitario Google AdSense (In-Feed Tech Banner)
         </div>
-        <p class="text-xs text-slate-500">Bloc publicitari automatitzat amb format natiu d'alta integració visual.</p>
+        <p class="text-xs text-slate-500">Bloque publicitario automatizado con formato nativo de alta integración visual.</p>
       </div>
     </div>
 
     <!-- HIGH QUALITY EDITORIAL CONTENT (COMPLIANCE ADSENSE & ORGANIC TRAFFIC) -->
     <section id="articles" class="space-y-12">
       <div class="text-center max-w-2xl mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Recursos Tècnics i Bones Pràctiques</h2>
-        <p class="text-slate-400 text-xs sm:text-sm mt-2">Guies essencials sobre arquitectura web, format de dades, expressions regulars i accessibilitat segons els estàndards W3C.</p>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Recursos Técnicos y Buenas Prácticas</h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-2">Guías esenciales sobre arquitectura web, formato de datos, expresiones regulares y accesibilidad según los estándares W3C.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -844,12 +844,12 @@
           <div class="w-10 h-10 rounded-xl bg-violet-950 text-violet-400 flex items-center justify-center mb-4">
             <i data-lucide="code" class="w-5 h-5"></i>
           </div>
-          <h3 class="text-lg font-bold mb-2">Com optimitzar la càrrega de dades JSON a producció</h3>
+          <h3 class="text-lg font-bold mb-2">Cómo optimizar la carga de datos JSON en producción</h3>
           <p class="text-xs text-slate-400 leading-relaxed mb-3">
-            El format JSON (JavaScript Object Notation) és l'estàndard de facto per a les comunicacions API REST i GraphQL. Quan treballem amb grans conjunts de dades a clients web o mòbils, cada byte compta.
+            El formato JSON (JavaScript Object Notation) es el estándar de facto para las comunicaciones API REST y GraphQL. Cuando trabajamos con grandes conjuntos de datos en clientes web o móviles, cada byte cuenta.
           </p>
           <p class="text-xs text-slate-400 leading-relaxed">
-            Minificar els arxius JSON eliminant salts de línia i espais pot reduir la mida del fitxer entre un 20% i un 45%. A més, comprimir la resposta mitjançant gzip o Brotli al servidor redueix dràsticament el temps de càrrega (TTFB).
+            Minificar los archivos JSON eliminando saltos de línea y espacios puede reducir el tamaño del archivo entre un 20% y un 45%. Además, comprimir la respuesta mediante gzip o Brotli en el servidor reduce drásticamente el tiempo de carga (TTFB).
           </p>
         </article>
 
@@ -857,12 +857,12 @@
           <div class="w-10 h-10 rounded-xl bg-cyan-950 text-cyan-400 flex items-center justify-center mb-4">
             <i data-lucide="binary" class="w-5 h-5"></i>
           </div>
-          <h3 class="text-lg font-bold mb-2">Codificació Base64 i seguretat de dades UTF-8</h3>
+          <h3 class="text-lg font-bold mb-2">Codificación Base64 y seguridad de datos UTF-8</h3>
           <p class="text-xs text-slate-400 leading-relaxed mb-3">
-            La funció nativa <code>btoa()</code> només suporta caràcters Latin1. Quan s'intenta codificar text en català amb accents o caràcters especials UTF-8, es produeix un error d'execució.
+            La función nativa <code>btoa()</code> solo admite caracteres Latin1. Al intentar codificar texto en español con tildes, la letra ñ o caracteres especiales UTF-8, se produce un error de ejecución.
           </p>
           <p class="text-xs text-slate-400 leading-relaxed">
-            Mitjançant la combinació de l'API estàndard <code>TextEncoder</code> i <code>Uint8Array</code>, DevToolkit Studio garanteix una transformació 100% lliure d'errors, amb compatibilitat URL-safe per transmetre tokens i payloads de manera fiable en query strings.
+            Mediante la combinación de la API estándar <code>TextEncoder</code> y <code>Uint8Array</code>, DevToolkit Studio garantiza una transformación 100% libre de errores, con compatibilidad URL-safe para transmitir tokens y payloads de manera fiable en query strings.
           </p>
         </article>
 
@@ -870,12 +870,12 @@
           <div class="w-10 h-10 rounded-xl bg-emerald-950 text-emerald-400 flex items-center justify-center mb-4">
             <i data-lucide="scan-search" class="w-5 h-5"></i>
           </div>
-          <h3 class="text-lg font-bold mb-2">Guia ràpida de Regex i prevenció de ReDoS</h3>
+          <h3 class="text-lg font-bold mb-2">Guía rápida de Regex y prevención de ReDoS</h3>
           <p class="text-xs text-slate-400 leading-relaxed mb-3">
-            Les expressions regulars permeten validar patrons complexos de correus, telèfons o dates en mil·lisegons. No obstant això, patrons amb quantificadors anidats com <code>(a+)+$</code> poden provocar atacs de denegació de servei per expressió regular (ReDoS).
+            Las expresiones regulares permiten validar patrones complejos de correos, teléfonos o fechas en milisegundos. Sin embargo, patrones con cuantificadores anidados como <code>(a+)+$</code> pueden provocar ataques de denegación de servicio por expresión regular (ReDoS).
           </p>
           <p class="text-xs text-slate-400 leading-relaxed">
-            Provar les teves expressions regulars amb conjunts de dades reals en un entorn client aïllat abans de desplegar-les a servidors de producció evita bloquejos de la CPU i garanteix una experiència fluida.
+            Probar tus expresiones regulares con conjuntos de datos reales en un entorno cliente aislado antes de desplegarlas en servidores de producción evita bloqueos de la CPU y garantiza una experiencia fluida.
           </p>
         </article>
 
@@ -883,12 +883,12 @@
           <div class="w-10 h-10 rounded-xl bg-indigo-950 text-indigo-400 flex items-center justify-center mb-4">
             <i data-lucide="fingerprint" class="w-5 h-5"></i>
           </div>
-          <h3 class="text-lg font-bold mb-2">Per què utilitzar UUIDs v4 en comptes d'IDs seqüencials</h3>
+          <h3 class="text-lg font-bold mb-2">Por qué utilizar UUIDs v4 en lugar de IDs secuenciales</h3>
           <p class="text-xs text-slate-400 leading-relaxed mb-3">
-            Els identificadors autoincrementals a bases de dades revelen el volum exacte de negoci i transaccions del teu sistema a tercers, sent vulnerables a atacs d'enumeració directa (IDOR).
+            Los identificadores autoincrementales en bases de datos revelan el volumen exacto de negocio y transacciones de tu sistema a terceros, siendo vulnerables a ataques de enumeración directa (IDOR).
           </p>
           <p class="text-xs text-slate-400 leading-relaxed">
-            Els UUID v4 (Universally Unique Identifiers) aporten 122 bits d'entropia aleatòria pura. La probabilitat de col·lisió és pràcticament nul·la, facilitant la generació segura d'IDs tant al client com en microserveis distribuïts.
+            Los UUID v4 (Universally Unique Identifiers) aportan 122 bits de entropía aleatoria pura. La probabilidad de colisión es prácticamente nula, facilitando la generación segura de IDs tanto en el cliente como en microservicios distribuidos.
           </p>
         </article>
       </div>
@@ -908,37 +908,37 @@
             <span class="font-extrabold text-lg text-white">DevToolkit Studio</span>
           </div>
           <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
-            Plataforma d'eines ràpides i gratuïtes per a desenvolupadors web. Execució segura en local, sense rastreig de dades confidencials de codi ni enviaments a servidors aliens.
+            Plataforma de herramientas rápidas y gratuitas para desarrolladores web. Ejecución segura en local, sin rastreo de datos confidenciales de código ni envíos a servidores externos.
           </p>
         </div>
 
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Eines Ràpides</h4>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Herramientas Rápidas</h4>
           <ul class="space-y-2 text-xs text-slate-400">
-            <li><a href="javascript:void(0)" onclick="switchTool('json')" class="hover:text-violet-400">Formatador JSON</a></li>
+            <li><a href="javascript:void(0)" onclick="switchTool('json')" class="hover:text-violet-400">Formateador JSON</a></li>
             <li><a href="javascript:void(0)" onclick="switchTool('base64')" class="hover:text-violet-400">Base64 & URL Encoder</a></li>
             <li><a href="javascript:void(0)" onclick="switchTool('regex')" class="hover:text-violet-400">Regex Tester</a></li>
             <li><a href="javascript:void(0)" onclick="switchTool('uuid')" class="hover:text-violet-400">Generador UUID v4</a></li>
-            <li><a href="javascript:void(0)" onclick="switchTool('glass')" class="hover:text-violet-400">Efectes CSS Glassmorphism</a></li>
-            <li><a href="javascript:void(0)" onclick="switchTool('meta')" class="hover:text-violet-400">Targetes Socials Open Graph</a></li>
-            <li><a href="javascript:void(0)" onclick="switchTool('pass')" class="hover:text-violet-400">Generador de Contrasenyes</a></li>
-            <li><a href="javascript:void(0)" onclick="switchTool('color')" class="hover:text-violet-400">Contrast WCAG 2.1</a></li>
+            <li><a href="javascript:void(0)" onclick="switchTool('glass')" class="hover:text-violet-400">Efectos CSS Glassmorphism</a></li>
+            <li><a href="javascript:void(0)" onclick="switchTool('meta')" class="hover:text-violet-400">Tarjetas Sociales Open Graph</a></li>
+            <li><a href="javascript:void(0)" onclick="switchTool('pass')" class="hover:text-violet-400">Generador de Contraseñas</a></li>
+            <li><a href="javascript:void(0)" onclick="switchTool('color')" class="hover:text-violet-400">Contraste WCAG 2.1</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Transparència</h4>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Transparencia</h4>
           <ul class="space-y-2 text-xs text-slate-400">
-            <li><a href="privacy.html" class="hover:text-violet-400">Política de Privadesa</a></li>
-            <li><a href="terms.html" class="hover:text-violet-400">Condicions d'Ús</a></li>
-            <li><a href="ads.txt" target="_blank" class="hover:text-violet-400">Fitxer ads.txt</a></li>
+            <li><a href="privacy.html" class="hover:text-violet-400">Política de Privacidad</a></li>
+            <li><a href="terms.html" class="hover:text-violet-400">Condiciones de Uso</a></li>
+            <li><a href="ads.txt" target="_blank" class="hover:text-violet-400">Archivo ads.txt</a></li>
           </ul>
         </div>
       </div>
 
       <div class="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-        <p>© 2026 DevToolkit Studio. Eines de codi lliure i utilitat oberta.</p>
-        <span>EXECUCIÓ CLIENT-SIDE SENSE ENVIAMENT DE CODI AL SERVIDOR</span>
+        <p>© 2026 DevToolkit Studio. Herramientas de código abierto y utilidad libre.</p>
+        <span>EJECUCIÓN CLIENT-SIDE SIN ENVÍO DE CÓDIGO AL SERVIDOR</span>
       </div>
     </div>
   </footer>
@@ -948,14 +948,14 @@
     <div class="flex items-start gap-3">
       <i data-lucide="shield-check" class="w-6 h-6 text-violet-400 shrink-0 mt-0.5"></i>
       <div>
-        <h4 class="text-sm font-bold text-white">Privadesa i Galetes Publicitàries</h4>
-        <p class="text-xs text-slate-400 mt-1">Utilitzem galetes analítiques i de Google AdSense per mostrar anuncis rellevants i mesurar el trànsit d'acord amb el RGPD.</p>
+        <h4 class="text-sm font-bold text-white">Privacidad y Cookies Publicitarias</h4>
+        <p class="text-xs text-slate-400 mt-1">Utilizamos cookies analíticas y de Google AdSense para mostrar anuncios relevantes y medir el tráfico de acuerdo con el RGPD.</p>
         <div class="flex items-center gap-2 mt-3">
           <button onclick="acceptDevCookies()" class="px-3 py-1.5 rounded-lg bg-violet-600 text-white font-semibold text-xs hover:bg-violet-500 transition-colors">
-            Acceptar
+            Aceptar
           </button>
           <a href="privacy.html" class="px-3 py-1.5 rounded-lg border border-slate-700 text-slate-300 font-semibold text-xs hover:bg-slate-800 transition-colors">
-            Detalls
+            Detalles
           </a>
         </div>
       </div>
@@ -965,7 +965,7 @@
   <!-- TOAST NOTIFICATION -->
   <div id="toast" class="fixed top-5 right-5 z-50 bg-emerald-600 text-white px-4 py-2.5 rounded-xl shadow-xl font-mono text-xs hidden items-center gap-2 transition-all">
     <i data-lucide="check-circle" class="w-4 h-4"></i>
-    <span id="toast-text">Copiat al porta-retalls!</span>
+    <span id="toast-text">¡Copiado al portapapeles!</span>
   </div>
 
   <!-- JAVASCRIPT APP LOGIC -->
@@ -993,14 +993,14 @@
 
     // Tools Registry for Command Palette & Navigation
     const toolsRegistry = [
-      { id: 'json', title: 'Validador i Formatejador JSON', desc: 'Indenta, valida sintaxi, minifica i compta bytes de codi JSON.', icon: 'code-2', color: 'text-violet-400', tags: 'json format minify formatar validar parser' },
-      { id: 'glass', title: 'CSS Glassmorphism & Ombres', desc: 'Generador de panells de vidre esmerilat i ombres volumètriques en CSS.', icon: 'layers', color: 'text-indigo-400', tags: 'css glass glassmorphism blur backdrop shadow ombra disseny' },
-      { id: 'meta', title: 'SEO Meta Tags & Open Graph', desc: 'Targetes de previsualització social per a Twitter/X, LinkedIn i Google.', icon: 'share-2', color: 'text-cyan-400', tags: 'seo meta tags open graph twitter facebook og' },
-      { id: 'base64', title: 'Base64 & URL Encoder / Decoder', desc: 'Codifica i descodifica text, caràcters UTF-8 i URIs de forma segura.', icon: 'binary', color: 'text-cyan-400', tags: 'base64 url uri encoder decoder codificar descodificar utf8 btoa atob' },
-      { id: 'regex', title: 'Regex Tester en Temps Real', desc: 'Avaluador interactiu d\'expressions regulars amb patrons comuns i grups.', icon: 'scan-search', color: 'text-emerald-400', tags: 'regex expressio regular test tester pattern coincidencia grups' },
-      { id: 'uuid', title: 'Generador de UUID v4', desc: 'Crea identificadors únics universals criptogràfics per lots o individuals.', icon: 'fingerprint', color: 'text-indigo-400', tags: 'uuid guid v4 random id token rfc4122 unics' },
-      { id: 'pass', title: 'Contrasenyes & Tokens Segurs', desc: 'Generador de contrasenyes robustes amb window.crypto militar.', icon: 'key', color: 'text-emerald-400', tags: 'password contrasenya token clau seguretat crypto' },
-      { id: 'color', title: 'Contrast WCAG 2.1 Accessibilitat', desc: 'Verificador oficial de ràtio de contrast de colors AA i AAA.', icon: 'eye', color: 'text-amber-400', tags: 'wcag contrast accessibilitat color ratio aa aaa hex' }
+      { id: 'json', title: 'Validador y Formateador JSON', desc: 'Identa, valida sintaxis, minifica y cuenta bytes de código JSON.', icon: 'code-2', color: 'text-violet-400', tags: 'json format minify formatear validar parser' },
+      { id: 'glass', title: 'CSS Glassmorphism & Sombras', desc: 'Generador de paneles de vidrio esmerilado y sombras volumétricas en CSS.', icon: 'layers', color: 'text-indigo-400', tags: 'css glass glassmorphism blur backdrop shadow sombra diseno diseño' },
+      { id: 'meta', title: 'SEO Meta Tags & Open Graph', desc: 'Tarjetas de previsualización social para Twitter/X, LinkedIn y Google.', icon: 'share-2', color: 'text-cyan-400', tags: 'seo meta tags open graph twitter facebook og' },
+      { id: 'base64', title: 'Base64 & URL Encoder / Decoder', desc: 'Codifica y decodifica texto, caracteres UTF-8 y URIs de forma segura.', icon: 'binary', color: 'text-cyan-400', tags: 'base64 url uri encoder decoder codificar decodificar utf8 btoa atob' },
+      { id: 'regex', title: 'Regex Tester en Tiempo Real', desc: 'Evaluador interactivo de expresiones regulares con patrones comunes y grupos.', icon: 'scan-search', color: 'text-emerald-400', tags: 'regex expresion regular test tester pattern coincidencia grupos' },
+      { id: 'uuid', title: 'Generador de UUID v4', desc: 'Crea identificadores únicos universales criptográficos por lotes o individuales.', icon: 'fingerprint', color: 'text-indigo-400', tags: 'uuid guid v4 random id token rfc4122 unicos' },
+      { id: 'pass', title: 'Contraseñas & Tokens Seguros', desc: 'Generador de contraseñas robustas con window.crypto militar.', icon: 'key', color: 'text-emerald-400', tags: 'password contrasenas clave token seguridad crypto' },
+      { id: 'color', title: 'Contraste WCAG 2.1 Accesibilidad', desc: 'Verificador oficial de ratio de contraste de colores AA y AAA.', icon: 'eye', color: 'text-amber-400', tags: 'wcag contraste accesibilidad color ratio aa aaa hex' }
     ];
 
     // Tool switching
@@ -1072,7 +1072,7 @@
         container.innerHTML = `
           <div class="py-8 text-center text-slate-500 text-xs">
             <i data-lucide="help-circle" class="w-6 h-6 mx-auto mb-2 opacity-50"></i>
-            No s'ha trobat cap eina que coincideixi amb la cerca.
+            No se ha encontrado ninguna herramienta que coincida con la búsqueda.
           </div>
         `;
         lucide.createIcons();
@@ -1094,7 +1094,7 @@
             </div>
           </div>
           <div class="flex items-center gap-1.5">
-            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400">Obrir</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400">Abrir</span>
           </div>
         </div>
       `).join('');
@@ -1187,7 +1187,7 @@
       if (!input) {
         document.getElementById('json-output').value = '';
         badge.className = "text-[11px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-300";
-        badge.innerText = "Buit";
+        badge.innerText = "Vacío";
         return;
       }
 
@@ -1200,7 +1200,7 @@
         document.getElementById('json-output-stats').innerText = bytes + ' bytes';
 
         badge.className = "text-[11px] font-mono px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-800";
-        badge.innerText = "VÀLID";
+        badge.innerText = "VÁLIDO";
         errBox.classList.add('hidden');
       } catch (err) {
         badge.className = "text-[11px] font-mono px-2 py-0.5 rounded-full bg-rose-950 text-rose-300 border border-rose-800";
@@ -1219,7 +1219,7 @@
         document.getElementById('json-output').value = minified;
         const bytes = new Blob([minified]).size;
         document.getElementById('json-output-stats').innerText = bytes + ' bytes';
-        showToast("JSON minificat correctament!");
+        showToast("¡JSON minificado correctamente!");
       } catch (err) {
         formatJSON(2);
       }
@@ -1228,7 +1228,7 @@
     function copyJSON() {
       const output = document.getElementById('json-output').value;
       if (!output) return;
-      navigator.clipboard.writeText(output).then(() => showToast("Codi JSON copiat!"));
+      navigator.clipboard.writeText(output).then(() => showToast("¡Código JSON copiado al portapapeles!"));
     }
 
     function clearJSON() {
@@ -1236,7 +1236,7 @@
       document.getElementById('json-output').value = '';
       document.getElementById('json-input-stats').innerText = '0 bytes';
       document.getElementById('json-output-stats').innerText = '0 bytes';
-      document.getElementById('json-badge').innerText = 'Buit';
+      document.getElementById('json-badge').innerText = 'Vacío';
       document.getElementById('json-error-box').classList.add('hidden');
     }
 
@@ -1287,14 +1287,14 @@ border-radius: 16px;`;
 
     function copyCSS() {
       const css = document.getElementById('glass_css_code').innerText;
-      navigator.clipboard.writeText(css).then(() => showToast("Codi CSS copiat!"));
+      navigator.clipboard.writeText(css).then(() => showToast("¡Código CSS copiado al portapapeles!"));
     }
 
     // ================= 3. META TAGS / OPEN GRAPH =================
     function updateOG() {
-      const title = document.getElementById('og_title').value || "Títol del lloc";
-      const desc = document.getElementById('og_desc').value || "Descripció";
-      const url = document.getElementById('og_url').value || "https://exemple.cat";
+      const title = document.getElementById('og_title').value || "Título del sitio";
+      const desc = document.getElementById('og_desc').value || "Descripción";
+      const url = document.getElementById('og_url').value || "https://ejemplo.com";
       const img = document.getElementById('og_image').value || "";
 
       document.getElementById('og_preview_title').innerText = title;
@@ -1307,7 +1307,7 @@ border-radius: 16px;`;
       }
       if (img) document.getElementById('og_preview_img').src = img;
 
-      const code = `<!-- Primàries -->
+      const code = `<!-- Primarias -->
 <title>${title}</title>
 <meta name="title" content="${title}">
 <meta name="description" content="${desc}">
@@ -1331,7 +1331,7 @@ border-radius: 16px;`;
 
     function copyMeta() {
       const code = document.getElementById('og_code_output').innerText;
-      navigator.clipboard.writeText(code).then(() => showToast("Etiquetes Meta copiades!"));
+      navigator.clipboard.writeText(code).then(() => showToast("¡Etiquetas Meta copiadas al portapapeles!"));
     }
 
     // ================= 4. BASE64 & URL ENCODER/DECODER =================
@@ -1347,12 +1347,12 @@ border-radius: 16px;`;
         btnB64.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-violet-600 text-white transition-all";
         btnUrl.className = "px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all";
         urlSafeLabel.classList.remove('hidden');
-        document.getElementById('b64-input-title').innerText = "TEXT D'ENTRADA (BASE64)";
+        document.getElementById('b64-input-title').innerText = "TEXTO DE ENTRADA (BASE64)";
       } else {
         btnUrl.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-cyan-600 text-white transition-all";
         btnB64.className = "px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all";
         urlSafeLabel.classList.add('hidden');
-        document.getElementById('b64-input-title').innerText = "TEXT O URL D'ENTRADA";
+        document.getElementById('b64-input-title').innerText = "TEXTO O URL DE ENTRADA";
       }
 
       runB64Process('encode');
@@ -1390,7 +1390,7 @@ border-radius: 16px;`;
     function handleB64Input() {
       const input = document.getElementById('b64-input').value;
       const bytes = new Blob([input]).size;
-      document.getElementById('b64-input-stats').innerText = `${input.length} caràcters • ${bytes} bytes`;
+      document.getElementById('b64-input-stats').innerText = `${input.length} caracteres • ${bytes} bytes`;
       
       const isLive = document.getElementById('b64-live').checked;
       if (isLive) {
@@ -1431,11 +1431,11 @@ border-radius: 16px;`;
 
         outputEl.value = result;
         const outBytes = new Blob([result]).size;
-        document.getElementById('b64-output-stats').innerText = `${result.length} caràcters • ${outBytes} bytes`;
+        document.getElementById('b64-output-stats').innerText = `${result.length} caracteres • ${outBytes} bytes`;
         errBox.classList.add('hidden');
       } catch (err) {
         errBox.classList.remove('hidden');
-        errText.innerText = `Error en ${action === 'encode' ? 'codificar' : 'descodificar'}: ${err.message}. Comprova que la cadena sigui un format vàlid.`;
+        errText.innerText = `Error al ${action === 'encode' ? 'codificar' : 'decodificar'}: ${err.message}. Comprueba que la cadena tenga un formato válido.`;
       }
     }
 
@@ -1446,14 +1446,14 @@ border-radius: 16px;`;
       input.value = output.value;
       output.value = temp;
       handleB64Input();
-      showToast("Entrada i sortida intercanviades!");
+      showToast("¡Entrada y salida intercambiadas!");
     }
 
     function loadB64Sample() {
       if (b64Submode === 'base64') {
-        document.getElementById('b64-input').value = "DevToolkit Studio: Eines modernes per a enginyers web i dissenyadors! 🚀 ✨";
+        document.getElementById('b64-input').value = "DevToolkit Studio: ¡Herramientas modernas para ingenieros web y diseñadores! 🚀 ✨";
       } else {
-        document.getElementById('b64-input').value = "https://exemple.cat/cerca?categoria=desenvolupament web&filtre=gratuït & ràpid!";
+        document.getElementById('b64-input').value = "https://ejemplo.com/buscar?categoria=desarrollo web&filtro=gratuito & rapido!";
       }
       handleB64Input();
       runB64Process('encode');
@@ -1462,7 +1462,7 @@ border-radius: 16px;`;
     function clearB64() {
       document.getElementById('b64-input').value = '';
       document.getElementById('b64-output').value = '';
-      document.getElementById('b64-input-stats').innerText = '0 caràcters • 0 bytes';
+      document.getElementById('b64-input-stats').innerText = '0 caracteres • 0 bytes';
       document.getElementById('b64-output-stats').innerText = '0 bytes';
       document.getElementById('b64-error-box').classList.add('hidden');
     }
@@ -1470,7 +1470,7 @@ border-radius: 16px;`;
     function copyB64Output() {
       const output = document.getElementById('b64-output').value;
       if (!output) return;
-      navigator.clipboard.writeText(output).then(() => showToast("Resultat copiat al porta-retalls!"));
+      navigator.clipboard.writeText(output).then(() => showToast("¡Resultado copiado al portapapeles!"));
     }
 
     // ================= 5. REGEX TESTER =================
@@ -1478,42 +1478,42 @@ border-radius: 16px;`;
       email: {
         pattern: "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
         flags: { g: true, i: true, m: false, s: false },
-        sample: "Pots escriure a suport@devtoolkit.cat o a dev.team@gmail.com per contactar. Evita adreces com test@sense-tld."
+        sample: "Puedes escribir a soporte@devtoolkit.es o a dev.team@gmail.com para contactar. Evita direcciones como test@sin-tld."
       },
       url: {
         pattern: "https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)",
         flags: { g: true, i: true, m: false, s: false },
-        sample: "Visita https://github.com/projectes i la versió segura https://devtoolkit.studio/eines?id=42 per veure les novetats."
+        sample: "Visita https://github.com/proyectos y la versión segura https://devtoolkit.studio/herramientas?id=42 para ver las novedades."
       },
       ipv4: {
         pattern: "\\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b",
         flags: { g: true, i: false, m: false, s: false },
-        sample: "El router està a 192.168.1.1, el servidor DNS és 8.8.8.8 i la màquina local 127.0.0.1. El valor 999.1.1.1 no és vàlid."
+        sample: "El router está en 192.168.1.1, el servidor DNS es 8.8.8.8 y la máquina local 127.0.0.1. El valor 999.1.1.1 no es válido."
       },
       date: {
         pattern: "\\b\\d{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\\d|3[01])\\b",
         flags: { g: true, i: false, m: false, s: false },
-        sample: "La versió inicial es va publicar el 2026-05-15 i l'última auditoria es farà el 2026-10-05."
+        sample: "La versión inicial se publicó el 2026-05-15 y la última auditoría se realizará el 2026-10-05."
       },
       hex: {
         pattern: "#(?:[A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})\\b",
         flags: { g: true, i: true, m: false, s: false },
-        sample: "Els colors de la paleta són #7c3aed per al morat primari, #06b6d4 per al cian i #fff per al blanc."
+        sample: "Los colores de la paleta son #7c3aed para el morado primario, #06b6d4 para el cian y #fff para el blanco."
       },
       phone: {
         pattern: "(?:\\+?\\d{1,3}[- ]?)?\\(?\\d{2,4}\\)?[- ]?\\d{3,4}[- ]?\\d{3,4}",
         flags: { g: true, i: false, m: false, s: false },
-        sample: "Truca'ns al +34 932 123 456 o al 612-345-678 en horari d'oficina."
+        sample: "Llámanos al +34 912 123 456 o al 612-345-678 en horario de oficina."
       },
       slug: {
         pattern: "^[a-z0-9]+(?:-[a-z0-9]+)*$",
         flags: { g: false, i: false, m: false, s: false },
-        sample: "guia-optimizacio-seo-2026"
+        sample: "guia-optimizacion-seo-2026"
       },
       number: {
         pattern: "-?\\b\\d+(?:\\.\\d+)?\\b",
         flags: { g: true, i: false, m: false, s: false },
-        sample: "La temperatura actual és de -3.5 graus i la velocitat és de 120 km/h amb un coeficient de 0.85."
+        sample: "La temperatura actual es de -3.5 grados y la velocidad es de 120 km/h con un coeficiente de 0.85."
       }
     };
 
@@ -1530,9 +1530,9 @@ border-radius: 16px;`;
     }
 
     function loadSampleRegexText() {
-      document.getElementById('regex-test-text').value = `Emails vàlids: dev.contact@platform.cat, info@exemple.com, enginyeria+tech@domain.org.
-Emails descartats: usuari@sense_punt, @no-user.cat.
-Data de comprovació: 2026-10-05.`;
+      document.getElementById('regex-test-text').value = `Emails válidos: dev.contact@platform.es, info@ejemplo.com, ingenieria+tech@domain.org.
+Emails descartados: usuario@sin_punto, @no-user.es.
+Fecha de comprobación: 2026-10-05.`;
       testRegex();
     }
 
@@ -1554,8 +1554,8 @@ Data de comprovació: 2026-10-05.`;
       if (!pattern) {
         errBox.classList.add('hidden');
         highlightBox.innerText = text;
-        matchCountBadge.innerText = '0 coincidències';
-        matchesList.innerHTML = '<p class="text-xs text-slate-500 py-2">Escriu un patró per començar a cercar coincidències.</p>';
+        matchCountBadge.innerText = '0 coincidencias';
+        matchesList.innerHTML = '<p class="text-xs text-slate-500 py-2">Escribe un patrón para comenzar a buscar coincidencias.</p>';
         return;
       }
 
@@ -1598,13 +1598,13 @@ Data de comprovació: 2026-10-05.`;
         }
 
         const endTime = performance.now();
-        statsSummary.innerText = `Temps d'avaluació: ${(endTime - startTime).toFixed(2)} ms`;
+        statsSummary.innerText = `Tiempo de evaluación: ${(endTime - startTime).toFixed(2)} ms`;
 
         highlightBox.innerHTML = highlightedHtml || escapeHtml(text);
-        matchCountBadge.innerText = `${matches.length} coincidència${matches.length === 1 ? '' : 's'}`;
+        matchCountBadge.innerText = `${matches.length} coincidencia${matches.length === 1 ? '' : 's'}`;
 
         if (matches.length === 0) {
-          matchesList.innerHTML = '<p class="text-xs text-slate-500 py-2">Cap coincidència trobada amb el patró i text actuals.</p>';
+          matchesList.innerHTML = '<p class="text-xs text-slate-500 py-2">No se encontró ninguna coincidencia con el patrón y texto actuales.</p>';
         } else {
           matchesList.innerHTML = matches.map((m, i) => {
             const groups = m.slice(1);
@@ -1612,7 +1612,7 @@ Data de comprovació: 2026-10-05.`;
             if (groups.length > 0) {
               groupsHtml = `
                 <div class="mt-1 pt-1 border-t border-slate-800 text-[11px] text-slate-400 flex flex-wrap gap-2">
-                  ${groups.map((g, gIdx) => `<span><strong class="text-emerald-400">Grup ${gIdx + 1}:</strong> ${escapeHtml(g !== undefined ? g : 'undefined')}</span>`).join('')}
+                  ${groups.map((g, gIdx) => `<span><strong class="text-emerald-400">Grupo ${gIdx + 1}:</strong> ${escapeHtml(g !== undefined ? g : 'undefined')}</span>`).join('')}
                 </div>
               `;
             }
@@ -1620,7 +1620,7 @@ Data de comprovació: 2026-10-05.`;
               <div class="p-2.5 rounded-lg bg-slate-950 border border-slate-800 flex flex-col gap-1 text-xs">
                 <div class="flex items-center justify-between">
                   <span class="font-mono text-emerald-400 font-bold">#${i + 1} — &ldquo;${escapeHtml(m[0])}&rdquo;</span>
-                  <span class="text-[11px] font-mono text-slate-500">Posició: ${m.index}..${m.index + m[0].length} (${m[0].length} chars)</span>
+                  <span class="text-[11px] font-mono text-slate-500">Posición: ${m.index}..${m.index + m[0].length} (${m[0].length} caracteres)</span>
                 </div>
                 ${groupsHtml}
               </div>
@@ -1683,17 +1683,17 @@ Data de comprovació: 2026-10-05.`;
       }
 
       document.getElementById('uuid-batch-output').value = formattedOutput;
-      document.getElementById('uuid-batch-count-label').innerText = `LLISTA DE ${count} UUIDs GENERATS`;
+      document.getElementById('uuid-batch-count-label').innerText = `LISTA DE ${count} UUIDs GENERADOS`;
     }
 
     function copyPrimaryUUID() {
       const u = document.getElementById('uuid-primary').innerText;
-      navigator.clipboard.writeText(u).then(() => showToast("UUID copiat al porta-retalls!"));
+      navigator.clipboard.writeText(u).then(() => showToast("¡UUID copiado al portapapeles!"));
     }
 
     function copyAllUUIDs() {
       const content = document.getElementById('uuid-batch-output').value;
-      navigator.clipboard.writeText(content).then(() => showToast("Tots els UUIDs s'han copiat!"));
+      navigator.clipboard.writeText(content).then(() => showToast("¡Todos los UUIDs copiados al portapapeles!"));
     }
 
     function downloadUUIDs() {
@@ -1707,13 +1707,13 @@ Data de comprovació: 2026-10-05.`;
       a.click();
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
-      showToast("Arxiu .txt descarregat!");
+      showToast("¡Archivo .txt descargado!");
     }
 
     // ================= 7. PASSWORD GENERATOR =================
     function updatePassword() {
       const len = parseInt(document.getElementById('pass_length').value);
-      document.getElementById('pass_len_val').innerText = len + ' caràcters';
+      document.getElementById('pass_len_val').innerText = len + ' caracteres';
 
       const useUpper = document.getElementById('pass_upper').checked;
       const useLower = document.getElementById('pass_lower').checked;
@@ -1740,20 +1740,20 @@ Data de comprovació: 2026-10-05.`;
 
       const strengthEl = document.getElementById('pass_strength');
       if (len < 12) {
-        strengthEl.innerText = "Feble";
+        strengthEl.innerText = "Débil";
         strengthEl.className = "text-rose-400 font-semibold";
       } else if (len < 18) {
-        strengthEl.innerText = "Bona";
+        strengthEl.innerText = "Buena";
         strengthEl.className = "text-amber-400 font-semibold";
       } else {
-        strengthEl.innerText = "Excel·lent (Militar)";
+        strengthEl.innerText = "Excelente (Militar)";
         strengthEl.className = "text-emerald-400 font-semibold";
       }
     }
 
     function copyPassword() {
       const pass = document.getElementById('pass_output').value;
-      navigator.clipboard.writeText(pass).then(() => showToast("Contrasenya copiada!"));
+      navigator.clipboard.writeText(pass).then(() => showToast("¡Contraseña copiada al portapapeles!"));
     }
 
     // ================= 8. WCAG CONTRAST CHECKER =================
@@ -1803,10 +1803,10 @@ Data de comprovació: 2026-10-05.`;
       const aaEl = document.getElementById('wcag_aa');
       const aaaEl = document.getElementById('wcag_aaa');
 
-      aaEl.innerText = passAA ? "APROVAT" : "FALLAT";
+      aaEl.innerText = passAA ? "APROBADO" : "NO APTO";
       aaEl.className = passAA ? "font-bold text-emerald-400" : "font-bold text-rose-400";
 
-      aaaEl.innerText = passAAA ? "APROVAT" : "FALLAT";
+      aaaEl.innerText = passAAA ? "APROBADO" : "NO APTO";
       aaaEl.className = passAAA ? "font-bold text-emerald-400" : "font-bold text-rose-400";
     }
 
